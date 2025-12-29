@@ -1,5 +1,5 @@
 
-import { SquareTerminal, Github, Linkedin, Globe, Mail } from "lucide-react";
+import { SquareTerminal, Github, Linkedin, Globe, Mail, CodeXml } from "lucide-react";
 
 export const resumeData = {
   personalInfo: {
@@ -23,6 +23,11 @@ export const resumeData = {
         name: "Scryptify.ai",
         url: "https://scryptify.ai",
         icon: Globe,
+      },
+      {
+        name: "LeetCode",
+        url: "https://leetcode.com/u/vkyd1909/",
+        icon: CodeXml,
       },
       {
         name: "Email",
