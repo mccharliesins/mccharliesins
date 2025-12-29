@@ -4,8 +4,8 @@ import { SquareTerminal, Github, Linkedin, Globe, Mail, CodeXml } from "lucide-r
 export const resumeData = {
   personalInfo: {
     name: "Venkateshwar Yadav",
-    title: "Full Stack Developer",
-    tagline: "Building Scryptify.AI | MERN Stack | React Native | Scalable Backend Systems",
+    title: "GenAI & Python Developer",
+    tagline: "Building Scryptify.AI | Generative AI | MERN Stack | Scalable Systems",
     location: "Toronto, Ontario, Canada",
     email: "vkyd1909@gmail.com",
     social: [
@@ -36,18 +36,20 @@ export const resumeData = {
       },
     ],
   },
-  summary: "Creative and adaptable Full Stack Developer with real-world experience building and scaling web, mobile, and AI solutions. Founder of an early-stage AI startup and a Hackathon winner (3rd place at North America's largest blockchain hackathon). Passionate about high-performance apps and UI/UX.",
+  summary: "Creative GenAI & Python Developer with a strong foundation in Data Science and Full Stack Web Development. Founder of an early-stage AI startup and a Hackathon winner. Specialized in building autonomous agents, RAG systems, and scalable web applications using modern tech stacks.",
   skills: [
-    "React Native",
-    "MERN Stack",
-    "Next.js",
+    "Generative AI & LLMs",
+    "Python & PyTorch",
+    "RAG & LangChain",
+    "React & Next.js",
     "TypeScript",
-    "Python",
-    "Google Cloud Platform",
-    "Tailwind CSS",
-    "Framer Motion",
+    "Computer Vision (OpenCV)",
+    "TensorFlow",
+    "Docker & Kubernetes",
+    "AWS & GCP",
+    "SQL & NoSQL",
     "CI/CD & DevOps",
-    "Blockchain Basics",
+    "Cybersecurity",
   ],
   experience: [
     {
@@ -65,20 +67,32 @@ export const resumeData = {
   ],
   projects: [
     {
+      title: "AI Code Assistant",
+      description: "VS Code extension using LLMs for real-time code suggestions, refactoring, and automated test generation. Integrated OpenAI and Hugging Face APIs.",
+      tech: ["Python", "TypeScript", "LLMs", "VS Code API"],
+      link: "#",
+    },
+    {
+      title: "Autonomous Trading Bot",
+      description: "High-frequency trading bot using Reinforcement Learning (PPO) and PyTorch. Features custom gym environments and live execution on Binance/MT5.",
+      tech: ["Python", "PyTorch", "RL", "FastAPI"],
+      link: "#",
+    },
+    {
+      title: "RAG Document Chatbot",
+      description: "Intelligent chatbot for querying PDF/Text documents using Retrieval-Augmented Generation. Built with LangChain, Pinecone, and GPT-4.",
+      tech: ["LangChain", "OpenAI", "Pinecone", "Streamlit"],
+      link: "#",
+    },
+    {
       title: "Scryptify AI",
-      description: "A scalable AI technology solution built with Python and Google Cloud Platform. Launched MVP with a focus on secure development practices and high-performance architecture.",
+      description: "A scalable AI technology solution built with Python and Google Cloud Platform. Launched MVP with a focus on secure development practices.",
       tech: ["Python", "GCP", "AI/ML", "React"],
       link: "https://scryptify.ai",
     },
     {
-      title: "Blockchain Hackathon Win",
-      description: "Secured 3rd position at North America's largest blockchain hackathon. Developed a decentralized application (dApp) prototype under high-pressure constraints.",
-      tech: ["Blockchain", "Solidity", "Web3"],
-      link: "#",
-    },
-    {
       title: "Portfolio Website",
-      description: "A premium, dark-mode portfolio website built with Next.js 15, Tailwind CSS, and Framer Motion. Features a bento-grid layout to showcase projects and skills.",
+      description: "Premium, dark-mode portfolio built with Next.js 15, Tailwind CSS, and Framer Motion. Features interactive particle backgrounds and bento grids.",
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
       link: "https://github.com/mccharliesins/mccharliesins",
     },
