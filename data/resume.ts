@@ -57,12 +57,6 @@ export const resumeData = {
       period: "Sep 2025 - Present",
       description: "Coordinating campus tech and AI events for over 100 students. Fostering engagement with emerging technologies and aligning technical initiatives with business fundamentals.",
     },
-    {
-      company: "Quik Shop Convenience",
-      role: "Retail Associate",
-      period: "July 2024 - Present",
-      description: "Ensuring smooth operations with 100% cash drawer reconciliation and excellent customer service.",
-    },
   ],
   projects: [
     {
