@@ -43,7 +43,7 @@ export const BentoGridItem = ({
             )}
         >
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-blue-500/5 opacity-0 group-hover/bento:opacity-100 transition-opacity duration-500" />
-            <div className="absolute inset-0 border border-transparent group-hover/bento:border-purple-500/20 rounded-xl transition-colors duration-300" />
+            <div className="absolute inset-0 border border-white/5 group-hover/bento:border-purple-500/50 rounded-xl transition-colors duration-300" />
 
             <div className="relative z-10">
                 {header}

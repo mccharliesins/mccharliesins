@@ -15,7 +15,7 @@ export default function Hero() {
                 <h2 className="text-sm md:text-base text-purple-300 font-medium uppercase tracking-[0.2em] mb-4 bg-white/5 border border-white/10 px-4 py-2 rounded-full inline-block backdrop-blur-sm">
                     PORTFOLIO
                 </h2>
-                <h1 className="text-5xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400 font-outfit mb-6 drop-shadow-sm">
+                <h1 className="text-5xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-400 to-pink-500 font-outfit mb-6 drop-shadow-sm">
                     {resumeData.personalInfo.name}
                 </h1>
                 <p className="max-w-2xl mx-auto text-zinc-300 md:text-xl mb-10 leading-relaxed font-light">
