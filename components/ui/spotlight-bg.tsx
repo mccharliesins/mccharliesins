@@ -136,8 +136,13 @@ export function SpotlightBackground() {
             {/* Particles Canvas */}
             <canvas ref={canvasRef} className="absolute inset-0 block w-full h-full" />
 
-            {/* Ambient Light */}
+            {/* Ambient Top Light */}
             <div className="absolute left-1/2 -translate-x-1/2 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#a855f725,#000)] opacity-60 blur-[100px] pointer-events-none" />
+
+            {/* Frosted Gradient Blobs */}
+            <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-purple-500/20 blur-[120px] animate-pulse pointer-events-none" />
+            <div className="absolute bottom-[20%] left-[10%] w-[600px] h-[600px] rounded-full bg-blue-500/10 blur-[120px] pointer-events-none" />
+            <div className="absolute top-[60%] right-[20%] w-[400px] h-[400px] rounded-full bg-pink-500/10 blur-[100px] pointer-events-none" />
         </div>
     );
 }
