@@ -49,7 +49,7 @@ function Icon({ mouseX, item }: { mouseX: any; item: any }) {
             <motion.div
                 ref={ref}
                 style={{ width, height }}
-                className="aspect-square rounded-full bg-white/10 border border-white/5 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors group relative"
+                className="aspect-square rounded-full bg-neutral-900 border border-white/5 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors group relative"
             >
                 <item.icon className="w-5 h-5 text-zinc-400 group-hover:text-purple-300" />
                 <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-black border border-white/10 px-2 py-1 rounded text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
