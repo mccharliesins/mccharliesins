@@ -8,8 +8,19 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Venkateshwar Yadav | Full Stack Developer",
-  description: "Portfolio of Venkateshwar Yadav - Full Stack Developer specializing in MERN, React Native, and AI Solutions.",
+  title: "Venkateshwar Yadav | GenAI & Full Stack Developer",
+  description: "Portfolio of Venkateshwar Yadav - GenAI & Python Developer specializing in Autonomous Agents, RAG Systems, and Scalable Web Apps.",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon.ico" },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/favicon/apple-touch-icon.png" },
+    ],
+  },
+  manifest: "/favicon/site.webmanifest",
 };
 
 export default function RootLayout({
