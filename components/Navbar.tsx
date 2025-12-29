@@ -1,9 +1,9 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Home, User, Briefcase, Code, GraduationCap, Mail } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { useState, useEffect } from "react";
+import { useRef } from "react";
 
 const navItems = [
     { name: "Home", icon: Home, href: "#" },
@@ -15,42 +15,47 @@ const navItems = [
 ];
 
 export default function Navbar() {
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    const mouseX = useMotionValue(Infinity);
 
     return (
         <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50"
+            onMouseMove={(e) => mouseX.set(e.pageX)}
+            onMouseLeave={() => mouseX.set(Infinity)}
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex h-16 items-end gap-4 rounded-full bg-neutral-900/40 px-4 pb-3 backdrop-blur-2xl border border-white/10" // Simplified container
         >
-            <div className={cn(
-                "flex items-center gap-1 md:gap-2 px-3 py-3 rounded-full border transition-all duration-300",
-                scrolled
-                    ? "bg-black/50 backdrop-blur-md border-white/10 shadow-2xl shadow-purple-500/10"
-                    : "bg-white/5 border-white/5 backdrop-blur-sm"
-            )}>
-                {navItems.map((item) => (
-                    <Link
-                        key={item.name}
-                        href={item.href}
-                        className="p-2 md:p-3 rounded-full hover:bg-white/10 text-zinc-400 hover:text-white transition-all group relative"
-                    >
-                        <item.icon className="w-5 h-5 md:w-6 md:h-6" />
-                        <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-black border border-white/10 px-2 py-1 rounded text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-                            {item.name}
-                        </span>
-                    </Link>
-                ))}
-            </div>
+            {navItems.map((item) => (
+                <Icon key={item.name} mouseX={mouseX} item={item} />
+            ))}
         </motion.div>
+    );
+}
+
+function Icon({ mouseX, item }: { mouseX: any; item: any }) {
+    const ref = useRef<HTMLDivElement>(null);
+
+    const distance = useTransform(mouseX, (val: number) => {
+        const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+        return val - bounds.x - bounds.width / 2;
+    });
+
+    const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+    const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+
+    const width = useSpring(widthTransform, { mass: 0.1, stiffness: 150, damping: 12 });
+    const height = useSpring(heightTransform, { mass: 0.1, stiffness: 150, damping: 12 });
+
+    return (
+        <Link href={item.href}>
+            <motion.div
+                ref={ref}
+                style={{ width, height }}
+                className="aspect-square rounded-full bg-white/10 border border-white/5 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors group relative"
+            >
+                <item.icon className="w-5 h-5 text-zinc-400 group-hover:text-purple-300" />
+                <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-black border border-white/10 px-2 py-1 rounded text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                    {item.name}
+                </span>
+            </motion.div>
+        </Link>
     );
 }
