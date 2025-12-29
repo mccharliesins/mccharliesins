@@ -13,7 +13,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
                 <h2 className="text-sm md:text-base text-purple-300 font-medium uppercase tracking-[0.2em] mb-4 bg-white/5 border border-white/10 px-4 py-2 rounded-full inline-block backdrop-blur-sm">
-                    PORTFOLIO 2025
+                    PORTFOLIO
                 </h2>
                 <h1 className="text-5xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400 font-outfit mb-6 drop-shadow-sm">
                     {resumeData.personalInfo.name}
