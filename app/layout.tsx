@@ -20,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body
-        className={`${inter.variable} ${outfit.variable} font-sans bg-black text-white antialiased selection:bg-purple-500/30 selection:text-purple-200`}
+        className={`${inter.variable} ${outfit.variable} font-sans text-white antialiased selection:bg-purple-500/30 selection:text-purple-200`}
       >
         <SpotlightBackground />
-        {children}
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
