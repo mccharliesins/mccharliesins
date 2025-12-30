@@ -1,10 +1,9 @@
 
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { SpotlightBackground } from "@/components/ui/spotlight-bg";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
@@ -31,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <body
-        className={`${inter.variable} ${outfit.variable} font-sans text-white antialiased selection:bg-purple-500/30 selection:text-purple-200`}
+        className={`${outfit.variable} font-sans text-white antialiased selection:bg-purple-500/30 selection:text-purple-200`}
       >
         <SpotlightBackground />
         <div className="relative z-10">
