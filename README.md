@@ -129,12 +129,12 @@ I'm a passionate **Full-Stack Software Developer** based in **Toronto, Canada** 
 
 ## 🎓 Education & Certifications
 
-- 🎓 **Advanced Diploma in Computer Science** | Canada (2024-2025)
-- ☁️ **Google Cloud Certified - Associate Cloud Engineer**
-- ☁️ **Google Cloud Certified - Cloud Digital Leader**
-- 🏆 **Multiple Hackathon Winner** | Major League Hacking (MLH)
-- 🤝 **Perplexity Ambassador** | AI & Technology Advocacy
-
+- 🎓 **Advanced Diploma in Computer Systems Technology - Software Engineering** | Centennial College, Toronto, ON | Expected April 2026
+- 🎓 **Bachelor of Computer Applications (BCA)** | Savitribai Phule Pune University, India | 2020-2023
+- ☁️ **Google Cloud Certified - Associate Cloud Engineer** | Professional Certification
+- ☁️ **Google Cloud Certified - Cloud Digital Leader** | Foundational Certification
+- 🏆 **Multiple Hackathon Winner** | Major League Hacking (MLH) - Including 3rd Place at Consensus 2025 ($7K Prize)
+- 🤝 **Perplexity Ambassador** | AI & Technology Advocacy | September 2025 - December 2025
 ---
 
 ## 📊 GitHub Statistics
