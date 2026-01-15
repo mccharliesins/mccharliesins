@@ -137,18 +137,6 @@ I'm a passionate **Full-Stack Software Developer** based in **Toronto, Canada** 
 - 🤝 **Perplexity Ambassador** | AI & Technology Advocacy | September 2025 - December 2025
 ---
 
-## 📊 GitHub Statistics
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=mccharliesins&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=mccharliesins&theme=radical&hide_border=true" alt="GitHub Streak" height="170"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mccharliesins&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages" height="170"/>
-
-</div>
-
----
 
 ## 🏆 Achievements & Highlights
 
@@ -182,7 +170,7 @@ I'm a passionate **Full-Stack Software Developer** based in **Toronto, Canada** 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mccharliesins)
-[![Email](https://img.shields.io/badge/Email-charlie@mccharliesins.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charlie@mccharliesins.com)
+[![Email](https://img.shields.io/badge/Email-vkyd1909@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vkyd1909@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://mccharliesins.com/)
 
 **📍 Location:** Toronto, Ontario, Canada  
