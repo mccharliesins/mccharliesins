@@ -129,7 +129,7 @@ I'm a passionate **Full-Stack Software Developer** based in **Toronto, Canada** 
 
 ## 🎓 Education & Certifications
 
-- 🎓 **Advanced Diploma in Computer Systems Technology - Software Engineering** | Centennial College, Toronto, ON | Expected December 2025
+- 🎓 **Advanced Diploma in Computer Systems Network Technology** | Centennial College, Toronto, ON | December 2025
 - 🎓 **Bachelor of Computer Applications (BCA)** | Savitribai Phule Pune University, India | 2020-2023
 - ☁️ **Google Cloud Certified - Associate Cloud Engineer** | Professional Certification
 - ☁️ **Google Cloud Certified - Cloud Digital Leader** | Foundational Certification
